@@ -1,0 +1,41 @@
+@media screen and (max-width: 776px) {
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 400px;
+    position: absolute;
+    -webkit-transform: translate(-500px, 0);
+    transform: translate(-500px, 0);
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    -webkit-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+  }
+  a {
+    padding: 10px;
+    padding-block: 13px;
+  }
+}
+
+@media screen and (min-width: 776px) {
+  .NavMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .open {
+    -webkit-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+  }
+  a {
+    padding: 10px;
+    padding-block: 15px;
+  }
+}
